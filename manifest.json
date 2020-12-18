@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "SHOWROOM すこアニ (仮) β版フォント変更(機能制限版)",
+    "description": "すこアニのフォントを手軽に変更できる拡張機能の機能制限版",
+    "version": "1.1.0",
+    "icons": {
+        "128": "img/cc128.png",
+        "16": "img/cc16.png",
+        "48": "img/cc48.png"
+    },
+    "web_accessible_resources": [
+        "fonts/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://sr-com.net/suko_ani/*",
+                "https://sr-com.net/suko_ani/*"
+            ],
+            "js": [
+                "js/jquery-3.5.1.js",
+                "js/changefont.js"
+            ],
+            "css": [
+                "css/changefont.css"
+            ]
+        }
+    ]
+}
