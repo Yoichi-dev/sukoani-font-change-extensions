@@ -129,4 +129,16 @@ $(function () {
         localStorage.setItem('myFont', $(this).val())
     });
 
+    if ($('#connect_url').val() != '') {
+        $.ajax({
+            url: 'https://niconico-showroom-api.herokuapp.com/analyze/extensions-' + $('#connect_url').val(),
+            type: 'GET'
+        })
+            .done(function (data) {
+                console.log(data);
+            })
+            .fail(function () {
+            });
+    }
+
 });
