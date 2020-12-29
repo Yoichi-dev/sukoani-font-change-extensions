@@ -93,8 +93,23 @@ $(function () {
             <p>零壱弐参肆伍陸漆捌玖拾</p>\
         </div>\
     </div> ')
+    $('#preset_area').after('\
+    <div id="font_info_area" class="more" style="display: none;">\
+        <p class="title">お知らせ</p>\
+        <div class="in_box" style="text-align: left;">\
+        <p>・ニコニコ動画風コメント表示アプリ<br>　→　<a href="https://niconico-showroom.yoichi.dev/" target="_blank">https://niconico-showroom.yoichi.dev/</a></p>\
+        <br>\
+        <p>・配信コメント記録アプリ<br>　→　<a href="https://showroom-streaming-surveillance.yoichi.dev/" target="_blank">https://showroom-streaming-surveillance.yoichi.dev/</a></p>\
+        <br>\
+        <p>・LINE風コメントビューワー（β版）<br>　→　<a href="https://showroom-comment-viewer.yoichi.dev/" target="_blank">https://showroom-comment-viewer.yoichi.dev/</a></p>\
+        <br>\
+        <br>\
+        <p>Create By <a href="https://twitter.com/yoichiro_sub" target="_blank"><u>よーいちろー</u></a></p>\
+        </div>\
+    </div> ')
 
     $('.more_select').append('<button class="" type="button" name="font_change_area" id="add_font">フォント</button>')
+    $('.more_select').append('<button class="" type="button" name="font_change_area" id="add_font_info">拡張機能のお知らせ</button>')
 
     $('#add_font').click(function () {
         $('.more_select button').removeClass('on')
@@ -102,8 +117,20 @@ $(function () {
         $('#sound_setting').css('display', 'none')
         $('#ani_posi').css('display', 'none')
         $('#color_change_area').css('display', 'none')
+        $('#font_info_area').css('display', 'none')
         $(this).addClass('on')
         $('#font_area').css('display', 'block')
+    })
+
+    $('#add_font_info').click(function () {
+        $('.more_select button').removeClass('on')
+        $('#window_area').css('display', 'none')
+        $('#sound_setting').css('display', 'none')
+        $('#ani_posi').css('display', 'none')
+        $('#color_change_area').css('display', 'none')
+        $('#font_area').css('display', 'none')
+        $(this).addClass('on')
+        $('#font_info_area').css('display', 'block')
     })
 
     if (localStorage.getItem("myFont") != null) {
