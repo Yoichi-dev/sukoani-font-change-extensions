@@ -103,6 +103,8 @@ $(function () {
         <br>\
         <p>・LINE風コメントビューワー（β版）<br>　→　<a href="https://showroom-comment-viewer.yoichi.dev/" target="_blank">https://showroom-comment-viewer.yoichi.dev/</a></p>\
         <br>\
+        <p>・SRイベント分析サイト<br>　→　<a href="https://showroom-event-analyzer.yoichi.dev/" target="_blank">https://showroom-event-analyzer.yoichi.dev/</a></p>\
+        <br>\
         <br>\
         <p>Create By <a href="https://twitter.com/yoichiro_sub" target="_blank"><u>よーいちろー</u></a></p>\
         </div>\
